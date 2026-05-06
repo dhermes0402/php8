@@ -10,8 +10,9 @@
     // Declaración
     $persona = array(
         "nombre" => "juan",
-        "edad" => "25",
-        "ciudad" => "Madrid"
+        "edad" => 25,
+        "ciudad" => "Madrid",
+        "profesion" => "ing"
     );
 
     $productos = [
@@ -30,6 +31,18 @@
     var_dump($persona);
     echo "</pre>";
 
-    
+    // RECORRER ASOCIATIVOS
+    echo "<hr>";
+    foreach ($persona as $key => $value) {
+        echo "La llave es $key y el valor es $value";
+        echo "<br>";
+    }
+
+    echo "<hr>";
+    foreach ($persona as $key => $value) {
+        if (is_int($value)) {
+            echo "Si el valor es entero, el valor es: $value";
+        }
+    }
 
 ?>

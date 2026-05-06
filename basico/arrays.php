@@ -31,4 +31,32 @@
     echo "<pre>";
     var_dump($colores);
     echo "</pre>";
+
+    // Como recorrer arrays
+    echo "<hr>";
+    $coches = ["deportivo", "moto", "camión"];
+
+    for ($i=0; $i < count($coches); $i++) { 
+        echo "en el índice $i está " . $coches[$i];
+        echo "<br>";
+    }
+
+    // Recorrer con foreach
+    echo "<hr>";
+    $numeros = [1, 5, 7, 2];
+
+    foreach ($numeros as $numero) {
+        echo $numero;
+        echo "<br>";
+    }
+
+    echo "<hr>";
+    foreach ($numeros as $key => $value) {
+        echo "La llave o índice es $key y el valor es $value";
+        echo "<br>";
+    }
+
+
+
+
 ?>
